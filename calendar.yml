@@ -1,0 +1,7 @@
+# Date Specific Overrides (Example)
+# "YYYY-MM-DD": "service_key"
+"2026-12-30": "sat"
+"2026-12-31": "sun_hol"
+"2027-01-01": "sun_hol"
+"2027-01-02": "sun_hol"
+"2027-01-03": "sun_hol"

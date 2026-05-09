@@ -1,0 +1,61 @@
+stop:
+  id: TYO-001
+  name: Shibuya Station
+
+direction: inbound
+
+service_patterns:
+  wk:
+    label: Weekday
+    operates_on:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+
+  sat_sun_hol:
+    label: Saturday, Sunday & Holiday
+    operates_on:
+      - sat
+      - sun
+      - public_holiday
+
+timetables:
+  wk:
+    - time: "05:12"
+      to: last_stop
+      service: local
+
+    - time: "05:25"
+      to: last_stop
+      service: express
+
+    - time: "05:41"
+      to: last_stop
+      service: limited_express
+
+    - time: "23:35"
+      to: last_stop
+      service: local
+
+    - time: "23:59"
+      to: last_stop
+      service: local
+
+  sat_sun_hol:
+    - time: "05:25"
+      to: last_stop
+      service: local
+
+    - time: "05:40"
+      to: last_stop
+      service: express
+
+    - time: "23:35"
+      to: last_stop
+      service: local
+
+    - time: "23:59"
+      to: last_stop
+      service: local
